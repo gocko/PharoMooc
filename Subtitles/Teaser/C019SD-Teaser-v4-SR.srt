@@ -1,0 +1,246 @@
+1
+00:00:08,450 --> 00:00:11,110
+Bilo da ste početnik ili ekspert 
+u objekno-orijentisanom programiranju
+
+2
+00:00:11,110 --> 00:00:13,970
+dopašće vam se ovaj MOOC jer će promeniti 
+način na koji programirate sa objektima.
+
+3
+00:00:14,190 --> 00:00:17,310
+Ja sam Stéphane Ducasse, i zajedno sa
+Luc Fabresse i Damien Cassou,
+
+4
+00:00:17,310 --> 00:00:19,090
+predstaviću vam 
+MOOC o Pharo-u.
+
+5
+00:00:19,290 --> 00:00:19,970
+Šta je Pharo? 
+
+6
+00:00:19,980 --> 00:00:22,970
+Pharo je dinamičan i čist jezik
+koji će vam ponuditi
+
+7
+00:00:22,971 --> 00:00:25,490
+jedinstveno programersko iskustvo
+u kom ćete biti
+
+8
+00:00:25,490 --> 00:00:27,459
+u konstantnoj interakciji 
+sa živim objektima.
+
+9
+00:00:27,460 --> 00:00:30,900
+Pharo je jezik i okruženje otvorenog koda
+u tradiciji Smalltalk-a.
+
+10
+00:00:30,900 --> 00:00:35,640
+Zabavan j eza upotrebu,
+elegantan i veoma moćan.
+
+11
+00:00:36,080 --> 00:00:37,600
+Zašto kažem da je
+Pharo elegantan?
+
+12
+00:00:37,600 --> 00:00:40,590
+U stvari, veoma je jednostavan:
+njegova kompletna sintaksa, i insistiram 
+
+13
+00:00:40,590 --> 00:00:43,529
+na “kompletna”, može biti zapisanja
+na razglednicu i to je objektno-orijentisani
+
+14
+00:00:43,530 --> 00:00:46,900
+model zapisan u 4 linije. 
+S druge strane, Pharo i njegovo okruženje su
+
+15
+00:00:46,900 --> 00:00:50,220
+napisani isključivo u samom Pharo-u   
+upotrebom objekata i poruka.
+
+16
+00:00:50,550 --> 00:00:53,310
+Sve ove stavke čine Pharo
+veoma jednostavnim za učenje i
+
+17
+00:00:53,310 --> 00:00:55,670
+jednom kada ste razumeli sintaksu,
+imaćete pristup
+
+18
+00:00:55,670 --> 00:00:58,400
+celom Pharo svetu, jer je napisan 
+u samom Pharo-u.
+
+
+19
+00:00:58,630 --> 00:01:00,780
+To je razlog zašto se Pharo 
+koristi u oko 30
+
+20
+00:01:00,780 --> 00:01:03,700
+univerziteta širom sveta za učenje 
+objektno-orijentisanog programiranja.
+
+21
+00:01:05,430 --> 00:01:07,700
+U okviru ovog MOOC-a, 
+otkrićete da je Pharo zabavan.
+
+22
+00:01:08,240 --> 00:01:10,820
+Zapravo, dok programirate u Pharo-u,
+vi ste zaronjeni u svet
+
+23
+00:01:10,820 --> 00:01:13,230
+živih objekata. Svaki put  
+kada programer izmeni  
+
+24
+00:01:13,230 --> 00:01:16,610
+svoj kod, 3D animacija se menja
+i on odmah može da vidi
+
+25
+00:01:16,610 --> 00:01:17,200
+rezultat svog programa.
+
+26
+00:01:18,240 --> 00:01:21,080
+U Pharo-u, programer kontinuirano modifikuje
+objekte sa istovremenon povratnom informacijom.
+
+27
+00:01:21,250 --> 00:01:24,630
+Ovi objekti mogu predstavljati web 
+aplikacije, grafiku u 2D,
+
+28
+00:01:24,760 --> 00:01:27,630
+u 3D, mrežu,
+ili čak sam kod.
+
+29
+00:01:28,090 --> 00:01:30,400
+Videćete da je u Pharo-u
+sve objekat.
+
+30
+00:01:30,820 --> 00:01:32,930
+U okviru ovog MOOC-a, otkrićete
+da je Pharo takođe moćan
+
+31
+00:01:32,930 --> 00:01:36,370
+jezik, koji se koristi u kompanijama.
+
+32
+00:01:36,640 --> 00:01:38,550
+I možete pronaći
+neke priče o uspesima
+
+
+33
+00:01:38,550 --> 00:01:39,590
+na Pharo web sajtu.
+
+34
+00:01:41,770 --> 00:01:44,520
+U okviru ovog MOOC-a, takođe ćemo
+predstaviti Pharo web skladiste.
+
+35
+00:01:44,530 --> 00:01:46,850
+i kako ovo skladište revolucionarizuje
+način na koji su web applikacije
+
+36
+00:01:46,850 --> 00:01:49,340
+dizajnirane. 
+U toku ovog MOOC-a, razvićete
+
+37
+00:01:49,340 --> 00:01:51,590
+web aplikaciju potpuno napisanu
+u Pharo-u.
+
+38
+00:01:51,780 --> 00:01:54,450
+Pored ovoga, ponovo ćemo se vratiti
+osnovnim principima
+
+39
+00:01:54,450 --> 00:01:57,560
+programiranja ilustrovanjem
+kako ih Pharo koristi.
+
+40
+00:01:58,020 --> 00:02:00,460
+Predstavićemo neke idiome kodiranja
+i obrasce dizajniranja
+
+41
+00:02:00,460 --> 00:02:01,620
+da bismo bolje dizajnirali web aplikacije.
+
+42
+00:02:02,220 --> 00:02:04,540
+Takvi koncepti se mogu primeniti
+na bilo koji objektno-orijentisani jezik
+
+43
+00:02:04,590 --> 00:02:05,250
+pored Pharo-a.
+
+44
+00:02:06,400 --> 00:02:08,750
+Povrh toga, imaćete pristup 
+mnogim resursima kao što su
+
+45
+00:02:08,750 --> 00:02:11,370
+knjiga “Pharo by example” koja je
+dostupna na Pharo web sajtu.
+
+46
+00:02:11,620 --> 00:02:14,480
+Za najiskusnije od vas,
+ovaj MOOC će obezbediti novu 
+
+47
+00:02:14,480 --> 00:02:17,200
+viziju osnovnih principa
+objektno-orijentisanog programiranja
+
+48
+00:02:17,430 --> 00:02:19,540
+(tj. kasno vezivanje 
+i polimorfizam).
+
+49
+00:02:20,020 --> 00:02:23,520
+Kroz ovaj MOOC, dođite i otkrijte, 
+ili ponovo otkrijte, objektno-orijentisano
+
+50
+00:02:23,520 --> 00:02:25,900
+programiranje u drugačijem svetu,
+svetu Pharo-a…
+

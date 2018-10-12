@@ -1,0 +1,507 @@
+﻿1
+00:00:00,160 --> 00:00:03,400
+U ovoj sesiji ćemo videti
+Pharo objektni model.
+
+2
+00:00:03,560 --> 00:00:08,600
+Napravićemo pregled da vam pokažemo
+njegovu eleganciju i jendostavnost.
+
+3
+00:00:08,760 --> 00:00:11,280
+Nije potrebno
+da sve razumete sada
+
+4
+00:00:11,440 --> 00:00:15,840
+zato što ćemo prolaziti kroz ove pojmove
+u narednih nekoliko nedelja.
+
+5
+00:00:17,120 --> 00:00:20,400
+U Pharo-u postoje samo objekti i poruke.
+
+6
+00:00:20,560 --> 00:00:22,360
+Postoji mnoštvo objekata,
+
+7
+00:00:22,520 --> 00:00:27,240
+da predstave pokazivač miša,
+boolean-e, nizove,
+
+8
+00:00:27,400 --> 00:00:31,520
+brojeve, stringove,
+prozore, klizače...
+
+9
+00:00:31,680 --> 00:00:33,160
+Čak i kompajlere,
+
+10
+00:00:33,320 --> 00:00:38,360
+sistemske objekte kao što su  socket-i,
+fontovi, kolekcije i sl.
+
+11
+00:00:38,520 --> 00:00:40,360
+Sve su ovo objekti
+12
+00:00:40,520 --> 00:00:42,720
+kojima možemo poslati poruku.
+
+13
+00:00:42,880 --> 00:00:45,240
+Postoji mnoštvo različitih poruka.
+
+14
+00:00:45,400 --> 00:00:49,240
+Mozete poslati "size" (veličina) kolekciji 
+da dobijete njenu veličinu.
+
+15
+00:00:49,400 --> 00:00:52,560
+Imamo poruke 
+plus, at:put:, do: i sl.
+
+16
+00:00:52,720 --> 00:00:55,280
+Objekti i poruke.
+
+17
+00:00:55,760 --> 00:00:58,920
+Poruke ukazuju 
+na namere programera.
+
+18
+00:00:59,080 --> 00:01:02,840
+Kada pošaljem poruku objektu,
+Ja mu tražim da nešto uradi.
+
+19
+00:01:03,000 --> 00:01:06,720
+To je zaista zahtev
+upućen objektu.
+
+20
+00:01:06,880 --> 00:01:10,440
+I objekat odlučuje
+koji metod da upotrebi.
+
+21
+00:01:10,600 --> 00:01:14,440
+Ovo je način, kako postići 
+nameru programera 
+
+22
+00:01:14,600 --> 00:01:17,200
+odlučujući koji metod da se uposli.
+
+23
+00:01:17,880 --> 00:01:22,480
+Dalje imamo sledeći koncept,
+koji je zatvorenje (closure).
+
+24
+00:01:22,720 --> 00:01:25,440
+Postoje leksička zatvorenja,
+blokovi,
+
+25
+00:01:25,600 --> 00:01:29,240
+vrsta anonimnih metoda u Pharo-u.
+
+26
+00:01:29,400 --> 00:01:32,720
+Zovemo ih blokovi.
+Ovo je važan rečnik.
+
+27
+00:01:33,400 --> 00:01:37,960
+Blokovi su odvojeni
+uglastim zagradama, kao što vidite ovde.
+
+28
+00:01:38,120 --> 00:01:40,280
+Tako je sve ovo blok.
+
+29
+00:01:40,440 --> 00:01:44,720
+Dakle, treba zaista da gledate na blokove
+kao na anonimne metode.
+
+30
+00:01:46,200 --> 00:01:50,200
+U Pharo-u imamo 
+veoma jedostavan i ujednačen model.
+
+31
+00:01:50,520 --> 00:01:53,400
+Sve je objekat,
+instanca neke klase.
+
+32
+00:01:53,560 --> 00:01:56,760
+Čak su i klase i poruke objekti.
+
+33
+00:01:57,160 --> 00:02:01,440
+I sva izračunavanja između objekata
+se realizuju prosleđivanjem poruka.
+
+34
+00:02:01,600 --> 00:02:04,440
+WZaista govorimo 
+o slanju poruke,
+
+35
+00:02:04,600 --> 00:02:08,000
+to je izraz,
+a ne o izvršavanju metoda,
+
+36
+00:02:08,160 --> 00:02:11,120
+jer kada pošaljete poruku objektu,
+
+37
+00:02:11,280 --> 00:02:15,240
+postoji specifičan algoritam
+koji se zove "method lookup",
+
+38
+00:02:15,400 --> 00:02:17,120
+samo jedan algoritam,
+
+39
+00:02:17,280 --> 00:02:19,760
+koji selektuje odgovarajući metod 
+koji će se koristiti.
+
+40
+00:02:19,920 --> 00:02:24,880
+Metodi su virtuelno uvezani.
+
+41
+00:02:25,200 --> 00:02:28,280
+Oni prihvataju kasno vezivanje.
+
+42
+00:02:28,560 --> 00:02:31,200
+Pošaljem poruku objektu,
+
+43
+00:02:31,360 --> 00:02:34,360
+i "method lookup"
+selektuje odgovarajući metod.
+
+44
+00:02:34,520 --> 00:02:37,880
+Vratićemo se na to 
+u posvećenoj sesiji.
+
+45
+00:02:40,160 --> 00:02:42,960
+Pharo objektni model je kao što sledi.
+
+46
+00:02:43,120 --> 00:02:45,360
+Promenljive instance su zaštićene (protected).
+
+47
+00:02:45,520 --> 00:02:48,520
+Svi objekti imaju promenljive instance
+i one su zaštićene.
+
+48
+00:02:48,680 --> 00:02:50,880
+One su privatne za objekat
+
+49
+00:02:51,040 --> 00:02:55,080
+ili dostupne iz podklasa.
+
+50
+00:02:56,240 --> 00:02:59,000
+Metodi su javni
+i virtualno uvezani.
+
+51
+00:02:59,160 --> 00:03:02,280
+Svi metodi su javni u Pharo-u.
+
+52
+00:03:02,720 --> 00:03:05,560
+I Pharo prihvata 
+jednostruko nasleđivanje između klasa.
+
+53
+00:03:05,720 --> 00:03:08,120
+Klasa može imati 
+samo jednu superklasu.
+
+54
+00:03:09,560 --> 00:03:14,280
+Ovde je primer koda,
+vektorski proizvod dve tačke.
+
+55
+00:03:14,440 --> 00:03:16,480
+Imamo point1 i point2.
+
+56
+00:03:16,640 --> 00:03:21,600
+Množim polje x od point1
+poljem y od point2,
+
+57
+00:03:21,760 --> 00:03:23,960
+i oduzmem proizvod
+
+58
+00:03:24,120 --> 00:03:27,760
+polja y od point1
+i polja x od point2.
+
+59
+00:03:28,120 --> 00:03:32,600
+To je rimer izračunavanja
+koje možete uraditi u Pharo-u.
+
+60
+00:03:34,560 --> 00:03:38,080
+Za kreiranje objekata 
+imamo specijalne poruke.
+
+61
+00:03:38,240 --> 00:03:39,480
+Ovde, na primer,
+
+62
+00:03:39,640 --> 00:03:44,160
+ako pošaljem poruku @
+integeru 10
+
+63
+00:03:44,320 --> 00:03:46,680
+sa argumentom 20,
+
+64
+00:03:46,840 --> 00:03:50,240
+to će kreirati tačku (Point),
+instancu klase Point.
+
+65
+00:03:50,400 --> 00:03:53,320
+Ime ove poruke je @,
+
+66
+00:03:53,480 --> 00:03:57,640
+integer koji je primio poruku je 10,
+
+67
+00:03:57,800 --> 00:04:00,200
+onaj ispred imena poruke,
+
+68
+00:04:00,360 --> 00:04:03,840
+i argument, posle imena poruke, je 20.
+
+69
+00:04:04,000 --> 00:04:06,040
+Evo još jednog primera.
+
+70
+00:04:06,200 --> 00:04:10,880
+Želim da kreiram string 
+karaktera kao što je ovaj ovde.
+
+71
+00:04:11,040 --> 00:04:13,200
+Kako je ovaj string dobijen?
+
+72
+00:04:13,360 --> 00:04:16,480
+Ovde smo koristili prvu nisku,
+Pharo,
+
+73
+00:04:16,640 --> 00:04:19,800
+poslali smo joj poruku zarez (,),
+
+74
+00:04:19,960 --> 00:04:24,120
+kao argument
+imamo string is cool...
+
+75
+00:04:24,360 --> 00:04:26,280
+Što je ovde, zar ne?
+
+76
+00:04:28,160 --> 00:04:31,880
+Značenje poruke zarez
+je konkatenacija stringova.
+
+77
+00:04:32,040 --> 00:04:35,640
+Dva stringa se prilepe
+da se dobije jedinstven string.
+
+78
+00:04:37,000 --> 00:04:40,560
+Možemo direktno da kreiramo objekte
+
+79
+00:04:40,720 --> 00:04:42,240
+porukom new.
+
+80
+00:04:42,400 --> 00:04:47,200
+Pošaljem poruku new klasi Monster
+i dobiću instancu klase:
+
+81
+00:04:47,360 --> 00:04:49,000
+aMonster.
+
+82
+00:04:49,160 --> 00:04:52,640
+Mogu da kreiram instancu 
+klase Array,
+
+83
+00:04:52,840 --> 00:04:54,360
+specificiranjem new
+
+84
+00:04:54,520 --> 00:04:57,400
+i pripisivanjem parametra,
+što radim dvotačkom,
+
+85
+00:04:57,560 --> 00:04:59,520
+a onda tu integer 6.
+
+86
+00:04:59,680 --> 00:05:02,400
+I dobijam array veličine 6.
+
+87
+00:05:03,000 --> 00:05:05,960
+Možemo imati posvećene poruke
+za kreiranje objekata,
+
+88
+00:05:06,120 --> 00:05:09,040
+i mogu da definišime
+sopstvene poruke klasama.
+
+89
+00:05:09,200 --> 00:05:11,360
+Mogao bih da kreiram klasu Tomagoshi,
+
+90
+00:05:11,520 --> 00:05:14,080
+sa metodom withHunger
+
+91
+00:05:14,240 --> 00:05:17,800
+i ovom metodu
+ću dati integer 10.
+
+92
+00:05:17,960 --> 00:05:20,880
+Ovo kreira instancu 
+klase Tomagoshi
+
+93
+00:05:21,040 --> 00:05:22,800
+pripisujući parameter.
+
+94
+00:05:23,320 --> 00:05:27,520
+Dakel ovo je specijalizovana poruka
+za kreiranje objekta.
+
+95
+00:05:28,880 --> 00:05:33,880
+U ovom predavanju videli smo 
+pregled Pharo objektnog modela.
+
+96
+00:05:34,040 --> 00:05:37,880
+Ne morate da shvatite sve,
+vratićemo se na ove pojmove.
+
+97
+00:05:38,040 --> 00:05:41,760
+Ali je važno da zapamtite da
+u Pharo-u nema konstruktora,
+
+98
+00:05:41,920 --> 00:05:45,320
+nema statičkih metoda,
+deklaracija tipova, interfejsa,
+
+99
+00:05:45,480 --> 00:05:48,040
+package/private/protected modifikatora...
+
+100
+00:05:48,200 --> 00:05:51,600
+Svih onih klasičnih modifikatora
+koje dobijate sa objektnim jezicima.
+
+101
+00:05:51,760 --> 00:05:56,040
+Nema parametrizovanih tipova,
+boxinga/unboxinga i sl.
+
+102
+00:05:56,200 --> 00:05:59,280
+A videćete
+tda je ovo zaista moćan jezik.
+
+103
+00:06:00,720 --> 00:06:04,120
+Dakle, u Pharo-u,
+sve je objekat.
+
+104
+00:06:04,280 --> 00:06:07,200
+Izračunavanja se rade
+slanjem poruka objektima.
+
+105
+00:06:07,360 --> 00:06:12,080
+Metodi se kasno vezuju.
+
+106
+00:06:12,240 --> 00:06:14,640
+Imamo algoritam,
+method lookup,
+
+107
+00:06:14,800 --> 00:06:18,680
+koji selektuje odgovarajući metod
+kada objekat primi poruku.
+
+108
+00:06:18,960 --> 00:06:22,640
+Imamo pojam blokova,
+koji su anonimni metodi.
+
+109
+00:06:22,800 --> 00:06:25,000
+Veoma važno u Pharo-u.
+
+110
+00:06:25,160 --> 00:06:30,040
+I možemo poslati specifične poruke 
+klasama
+
+111
+00:06:30,200 --> 00:06:31,800
+da kreiramo objekte.
